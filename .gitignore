@@ -1,0 +1,6 @@
+# ignore the .RData file
+.RData
+# ignore the .Rhistory file
+.Rhistory
+# ignore the .DS_Store file
+.DS_Store

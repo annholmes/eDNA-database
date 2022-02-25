@@ -1,0 +1,86 @@
+"Species_Code","Common_Name","Genus","Species","Rockfish"
+"ANC","Northern Anchovy","Engraulis","mordax",FALSE
+"BAR","Pacific Barracuda","Sphyraena","argentea",FALSE
+"BAY","Black-and-Yellow Rockfish","Sebastes","chrysomelas",TRUE
+"BCO","Bocaccio","Sebastes","paucispinis",TRUE
+"BID","UnID Blue Rockfish","Sebastes","mystinus",TRUE
+"BLA","Black Rockfish","Sebastes","melanops",TRUE
+"BLM","Blacksmith","Chromis","punctipinnus",FALSE
+"BLU","Blue Rockfish","Sebastes","mystinus",TRUE
+"BSB","Barred Sand Bass","Paralabrax","nebulifer",FALSE
+"BSP","Black Seaperch","Embiotoca","jacksoni",FALSE
+"BUF","Buffalo Sculpin","Enophrys","bison",FALSE
+"BUS","Bull Sculpin","Enophrys","taurina",FALSE
+"BWN","Brown Rockfish","Sebastes","auriculatus",TRUE
+"CAL","Calico Rockfish","Sebastes","dalli",TRUE
+"CBZ","Cabezon","Scorpaenichthys","marmoratus",FALSE
+"CHN","China Rockfish","Sebastes","nebulosus",TRUE
+"CHP","Chilipepper Rockfish","Sebastes","goodei",TRUE
+"CNY","Canary Rockfish","Sebastes","pinniger",TRUE
+"CPR","Copper Rockfish","Sebastes","caurinus",TRUE
+"CSA","Chinook Salmon","Oncorhynchus","tshawytscha",FALSE
+"CSC","California Scorpionfish","Scorpaena","guttata",FALSE
+"DEA","Deacon Rockfish","Sebastes","diaconus",TRUE
+"FAN","Fantail Sole","Xystreurys","liolepis",FALSE
+"GAR","Garibaldi","Hypsypops","rubicundus",FALSE
+"GPR","Gopher Rockfish","Sebastes","carnatus",TRUE
+"GRS","Grass Rockfish","Sebastes","rastrelliger",TRUE
+"HAL","California Halibut","Paralichthys","californicus",FALSE
+"HCR","Honeycomb Rockfish","Sebastes","umbrosus",TRUE
+"HLF","Halfmoon","Medialuna","californiensis",FALSE
+"JMK","Jack Mackerel","Trachurus","symmetricus",FALSE
+"JSM","Jack Smelt","Atherinopsis","californiensis",FALSE
+"KGL","Kelp Greenling","Hexagrammos","decagrammus",FALSE
+"KLP","Kelp Rockfish","Sebastes","atrovirens",TRUE
+"KPB","Kelp Bass","Paralabrax","clathratus",FALSE
+"LCD","Lingcod","Ophiodon","elongatus",FALSE
+"LEZ","California Lizardfish","Synodus","lucioceps",FALSE
+"MKL","Mackerel (Family Scombridae)","","",FALSE
+"NBL","Northern Blue Rockfish","Sebastes","spp.",TRUE
+"OLV","Olive Rockfish","Sebastes","serranoides",TRUE
+"OPL","Opaleye","Girella","nigricans",FALSE
+"OYT","Olive or Yellowtail Rockfish","Sebastes","serranoides or flavidus",TRUE
+"PBO","Pacific Bonito","Sarda","chiliensis",FALSE
+"PGL","Painted Greenling","Oxylebius","pictus",FALSE
+"PLP","Pile Perch","Rhacochilus","vacca",FALSE
+"PMK","Pacific  (Chub) Mackerel","Scomber","japonicus",FALSE
+"PSD","Pacific Sanddab","Citharichthys","sordidus",FALSE
+"PSL","Petrale Sole","Eopsetta","jordani",FALSE
+"QBK","Quillback Rockfish","Sebastes","maliger",TRUE
+"RGL","Rock Greenling","Hexagrammos","lagocephalus",FALSE
+"RLS","Rubberlip Seaperch","Rhacochilus","toxotes",FALSE
+"RSL","Rock Sole","Lepidopsetta","bilineata",FALSE
+"RSP","Rainbow Seaperch","Hypsurus","caryi",FALSE
+"RSY","Rosy Rockfish","Sebastes","rosaceus",TRUE
+"RWS","Rock Wrasse","Halichoeres","semicinctus",FALSE
+"SAL","Salema","Xenistius","californiensis",FALSE
+"SDB","Sanddab spp.","Citharichthys","spp.",FALSE
+"SDF","Spiny Dogfish","Squalus","acanthias",FALSE
+"SEN","Senorita","Oxyjulis","californica",FALSE
+"SHP","California Sheephead","Semicossyphus","pulcher",FALSE
+"SHS","Scalyhead Sculpin","Artedius","harringtoni",FALSE
+"SLV","Silver Salmon","Oncorhynchus","kisutch",FALSE
+"SMT","Silversides (Family Atherinopsidae)","","",FALSE
+"SQR","Squarespot Rockfish","Sebastes","hopkinsi",TRUE
+"SRC","Sarcastic Fringehead","Neoclinus","blanchardi",FALSE
+"SRD","Pacific Sardine","Sardinops","sagax",FALSE
+"SRP","Sharpnose Surfperch","Phanerodon","atripes",FALSE
+"SRY","Starry Rockfish","Sebastes","constellatus",TRUE
+"SSD","Speckled Sanddab","Citharichthys","stigmaeus",FALSE
+"SSL","Sand Sole","Psettichthys","melanostictus",FALSE
+"SSP","Striped Seaperch","Embiotoca","lateralis",FALSE
+"TIG","Tiger Rockfish","Sebastes","nigrocinctus",TRUE
+"TRE","Treefish","Sebastes","serriceps",TRUE
+"TSM","Top smelt","Atherinops","affinis",FALSE
+"TUB","Tubesnout","Aulorhynchus","flavidus",FALSE
+"UKR","Unknown rockfish","Sebastes","",TRUE
+"UNK","Unknown","","",FALSE
+"VER","Vermilion Rockfish","Sebastes","miniatus",TRUE
+"WCR","White Croaker","Genyonemus","lineatus",FALSE
+"WHT","Ocean Whitefish","Caulolatilus","princeps",FALSE
+"WID","Widow Rockfish","Sebastes","entomelas",TRUE
+"WLF","Wolf Eel","Anarrhichthys","ocellatus",FALSE
+"WSB","White Seabass","Atractoscion","nobilis",FALSE
+"YLE","Yelloweye Rockfish","Sebastes","ruberrimus",TRUE
+"YTJ","Yellowtail Jack","Seriola","lalandi",FALSE
+"YTL","Yellowtail Rockfish","Sebastes","flavidus",TRUE

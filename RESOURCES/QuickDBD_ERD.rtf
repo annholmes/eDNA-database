@@ -1,0 +1,149 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Reference_Barcodes\
+-\
+Phylum varchar\
+Class varchar\
+Order varchar\
+Family varchar\
+Genus varchar\
+Species varchar pk fk - CCFRP_species_codes.Species\
+Binomial varchar\
+Sequence varchar pk fk - SEQUENCED_DATA.Sequence\
+\
+CCFRP_species_codes\
+- \
+Species_Code varchar pk\
+Common_Name varchar\
+Genus varchar fk\
+Species varchar\
+Rockfish bool\
+\
+SEQUENCED_DATA\
+-\
+Sequence varchar pk\
+rel_abun_total int \
+rel_abun_fish int\
+\
+HK_drift_info\
+-\
+Drift_ID varchar pk\
+Trip_ID varhchar\
+Grid_Cells varchar\
+Site(MPA/REF) varchar\
+Start_Time time\
+End_Time time\
+ST_LatDD int fk >- Waypoints.lat_DD\
+ST_LonDD int fk >- Waypoints.lon_DD\
+Start_GPS_Waypoint int fk - Waypoints.GPS_Waypoint\
+End_LatDD int fk >- Waypoints.lat_DD\
+End_LonDD int fk >- Waypoints.lon_DD\
+End_GPS_Waypoint int fk - Waypoints.GPS_Waypoint\
+SWT int\
+Relief int\
+Start_Depth int\
+End_Depth int\
+Total_Caught int\
+Cloud_Cover int\
+Wind_Speed varchar\
+Wind_Direction varchar\
+Swell_Height int\
+Comments varchar\
+\
+HK_Fishes\
+-\
+Drift_ID varchar fk >- Drift_info_all.Drift_ID\
+Species_Code varchar FK >- CCFRP_species_codes.Species_Code\
+Tag_ID varchar pk\
+Length(cm) int\
+Gear_Type varchar\
+Station_Number int\
+Angler_ID varchar\
+Depth_Released(ft) int\
+Sex varchar\
+Comments varchar\
+GPS_Waypoint int fk 0- Waypoints.GPS_Waypoint\
+\
+Drift_info_all\
+-\
+Drift_ID varchar pk fk - HK_drift_info.Drift_ID\
+Trip_ID varchar fk >-< HK_drift_info.Trip_ID\
+ID_cell_per_trip varchar\
+Grid_Cell_ID varchar\
+Site(MPA/REF) varchar\
+Start_Time time\
+End_Time time\
+ST_LatDD int fk >- Waypoints.lat_DD\
+ST_LonDD int fk >- Waypoints.lon_DD\
+Start_GPS_Waypoint int\
+Start_waypoint_link varchar fk 0- Waypoints.Waypoint_Link\
+End_LatDD int fk >- Waypoints.lat_DD\
+End_LonDD int fk >- Waypoints.lon_DD\
+End_GPS_Waypoint int fk >- Waypoints.GPS_Waypoint\
+End_waypoint_link varchar fk 0- Waypoints.Waypoint_Link\
+Drift_Length(m) int\
+Recorder varchar\
+Tag_Crew varchar\
+Surface_T int\
+Depth_T int\
+SWT(Vessel_F) int\
+Relief int\
+Start_Depth(ft) int\
+End_Depth(ft) int\
+Lincod_bar_weight(oz) int\
+Lead_weight(oz) int\
+SBT_tail_length(in) int\
+SBT_head_weight(oz) int\
+Seals_number int\
+SeaLions_number int\
+Fishes_Caught int\
+Cloud_Cover int\
+Wind_Speed varchar\
+Wind_Direction varchar\
+Swell_Height int\
+Comments varchar\
+\
+Caught_fishes_all\
+-\
+Fish_ID varchar pk\
+Drift_ID varchar fk >- Drift_info_all.Drift_ID\
+Species_Code varchar\
+Tag_ID varchar\
+Length(cm) int\
+Gear_Type varchar\
+Station_Number int\
+Angler_ID varchar\
+Depth_Released(ft) int\
+lat_released int\
+lon_released int\
+Sex varchar\
+Comments varchar\
+GPS_Waypoint int fk >0- Waypoints.GPS_Waypoint\
+Waypoint_Link varchar fk 0- Waypoints.Waypoint_Link\
+\
+Waypoints\
+-\
+Date date fk >-< CCFRP_2020_Sequencing.Date\
+Time time\
+GPS_Waypoint int pk fk - Drift_info_all.Start_GPS_Waypoint\
+Waypoint_Link varchar\
+lat_DD int\
+lon_DD int \
+\
+CCFRP_2020_Sequencing\
+-\
+Date date\
+Location varchar\
+Replicate varchar\
+Region varchar\
+Site(MPA/REF) varchar\
+MiSeq_Run/Date varchar\
+Sample_Name_MiSeq varchar\
+Number_of_Reads varchar\
+\
+}
