@@ -4,3 +4,5 @@
 .Rhistory
 # ignore the .DS_Store file
 .DS_Store
+# ignore config.py
+config.py
