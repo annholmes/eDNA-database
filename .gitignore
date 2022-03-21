@@ -8,3 +8,5 @@
 config.py
 # ignore config.yml
 config.yml
+#ignore .Rapp.history
+.Rapp.history
