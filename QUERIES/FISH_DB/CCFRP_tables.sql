@@ -1,15 +1,7 @@
--- drop table if exists Reference_Barcodes cascade; 
--- drop table if exists sequenced_data cascade; 
--- drop table if exists waypoints cascade;
--- drop table if exists CCFRP_2020_eDNA cascade;
--- drop table if exists CCFRP_2021_eDNA cascade;
--- drop table if exists Caught_fishes_all cascade;
--- drop table if exists CCFRP_2020_Sequencing cascade;
--- drop table if exists drift_info_all cascade;
--- drop table if exists hk_drift_info cascade;
--- drop table if exists hk_fishes cascade;
+create schema CCFRP;
 
-create table drift_info_all (
+-- Creating the CCFRP tables
+create table CCFRP.drift_info_all (
 	drift_id varchar(16),
 	trip_id varchar(16),
 	id_cell_per_trip varchar(1),
@@ -66,7 +58,7 @@ create table drift_info_all (
 	exclude_gear_specific_cpue varchar(1) 
 );
 
-create table hk_drift_info (
+create table CCFRP.hk_drift_info (
 	drift_id varchar(16),
 	trip_id varchar(8),
 	id_cell_per_trip varchar(1),
@@ -123,7 +115,7 @@ create table hk_drift_info (
 	exclude_gear_specific_cpue varchar(1) 
 );
 
-create table hk_fishes (
+create table CCFRP.hk_fishes (
 	fish_id varchar(1),
 	drift_id varchar(16),
 	species_code varchar(4),
@@ -153,7 +145,7 @@ create table hk_fishes (
 	waypoint_link varchar(1) 
 );
 
-create table Reference_Barcodes (
+create table CCFRP.Reference_Barcodes (
 	phylum varchar(8),
 	class varchar(16),
 	sp_order varchar(32),
@@ -164,7 +156,7 @@ create table Reference_Barcodes (
 	sequence varchar(256)
 );
 
-create table ccfrp_species_codes (
+create table CCFRP.ccfrp_species_codes (
 	species_code varchar(4),
 	common_name varchar(64),
 	genus varchar(16),
@@ -172,14 +164,14 @@ create table ccfrp_species_codes (
 	rockfish bool
 );
 
-create table sequenced_data(
+create table CCFRP.sequenced_data(
 	sequence varchar(256),
 	rel_abun_total int4,
 	rel_abun_fish int4,
 	CONSTRAINT sequenced_data_pkey PRIMARY KEY (sequence)
 );
 
-create table waypoints (
+create table CCFRP.waypoints (
 	Date varchar(16),
 	text_date int4,
 	Time varchar(16),
@@ -192,7 +184,7 @@ create table waypoints (
 	wp_id varchar(16)
 );
 
-create table ccfrp_2020_edna (
+create table CCFRP.ccfrp_2020_edna (
 	`date` varchar(8),
 	cell_location varchar(16),
 	replicate varchar(4),
@@ -226,7 +218,7 @@ create table ccfrp_2020_edna (
 	extracted varchar(16)
 );
 
-create table ccfrp_2021_edna (
+create table CCFRP.ccfrp_2021_edna (
 	`date` varchar(8),
 	cell_location varchar(32),
 	replicate varchar(4),
@@ -260,7 +252,7 @@ create table ccfrp_2021_edna (
 	extracted varchar(16)
 );
 
-create table caught_fishes_all (
+create table CCFRP.caught_fishes_all (
 	fish_id varchar(1),
 	drift_id varchar(16),
 	species_code varchar(4),
@@ -290,7 +282,7 @@ create table caught_fishes_all (
 	waypoint_link varchar(1)
 );
 
-create table ccfrp_2020_sequencing (
+create table CCFRP.ccfrp_2020_sequencing (
 	`date` varchar(8),
 	location varchar(256),
 	replicate varchar(256),
@@ -300,3 +292,14 @@ create table ccfrp_2020_sequencing (
 	sample_name_miseq_run varchar(256),
 	number_of_read varchar(256)
 );
+
+-- drop table if exists CCFRP.Reference_Barcodes cascade; 
+-- drop table if exists CCFRP.sequenced_data cascade; 
+-- drop table if exists CCFRP.waypoints cascade;
+-- drop table if exists CCFRP.CCFRP_2020_eDNA cascade;
+-- drop table if exists CCFRP.CCFRP_2021_eDNA cascade;
+-- drop table if exists CCFRP.Caught_fishes_all cascade;
+-- drop table if exists CCCFRP.CFRP_2020_Sequencing cascade;
+-- drop table if exists CCFRP.drift_info_all cascade;
+-- drop table if exists CCFRP.hk_drift_info cascade;
+-- drop table if exists CCFRP.hk_fishes cascade;
