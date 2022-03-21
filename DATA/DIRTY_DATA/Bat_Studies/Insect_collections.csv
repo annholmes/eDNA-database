@@ -1,0 +1,27 @@
+AH catalog # ,Order,Family,Genus,Species,Number individuals,Common name,ID by,Collected by,Collection date,Collection year,Locality,Locality details,Distribution,Status,Notes
+,Lepidoptera,Noctuidae,?,?,1,owlet moth,AH,AH,,,"Davis, CA",,,,
+,Lepidoptera,Noctuidae,?,?,1,owlet moth,AH,AH,,,"Davis, CA",,,,
+,Lepidoptera,Noctuidae,?,?,1,owlet moth,AH,AH,,,"Davis, CA",,,,
+,Lepidoptera,Noctuidae,?,?,1,owlet moth,AH,AH,,,"Davis, CA",,,,
+,Lepidoptera,Noctuidae,?,?,1,owlet moth,AH,AH,,,"Davis, CA",,,,
+,Lepidoptera,Noctuidae,?,?,1,owlet moth,AH,AH,,,"Davis, CA",,,,
+,Lepidoptera,Noctuidae,?,?,1,owlet moth,AH,AH,,,"Davis, CA",,,,
+,Lepidoptera,?,?,?,1,moth,AH,AH,,,"Davis, CA",,,,
+,Lepidoptera,Pieridae,Colias,eurytheme,12,"orange sulphur, alfalfa butterfly",AH,AH,,,"Davis, CA",,,,"flies during the day, unlikely bat prey"
+,Lepidoptera,Sphingidae,Manduca,quinquemaculata,1,"tomato hornworm, five-spotted hawkmoth",AH,AH,,,"Davis, CA",,,,probably too big for T brasiliensis prey
+,Diptera,Tipulidae,?,?,1,cranefly,AH,AH,,,"Davis, CA",,,,
+,Diptera,Tipulidae,?,?,1,cranefly,AH,AH,,,"Davis, CA",,,,
+,Diptera,?,?,?,1,mosquito,AH,AH,,,"Davis, CA",,,,
+,Diptera,?,?,?,1,mosquito,AH,AH,,,"Davis, CA",,,,
+,Coleoptera,?,?,?,1,weevil,AH,AH,,,"Davis, CA",,,,
+,Coleoptera,?,?,?,1,beetle,AH,AH,,,"Davis, CA",,,,
+,Coleoptera,Dytiscidae,Rhantus?,atricolor?,1,predaceous diving beetle,AH,AH,9/27/20,,"Davis, CA",Inside 423 K St,North America and neotropics,native?,"Diving beetle, but apparently they can fly (see https://lytlelab.science.oregonstate.edu/sites/lytlelab/files/Lytle&White2007_JIB.pdf)"
+,Hemiptera,Reduviidae,Zelus,renardii,1,leaf hopper assassin bug,AH,AH,9/26/20,,"Davis, CA",path from Korean Church to K St,North and Central America to 2000m,native,eat lacewings (beneficials)
+,Hemiptera,Pentatomidae,Halyomorpha,halys,1,brown marmorated stink bug,AH,AH,,,"Davis, CA",garden 432 K St,,non-native,
+,Hemiptera,Pentatomidae,Halyomorpha,halys,1,brown marmorated stink bug,AH,AH,,,"Davis, CA",garden 432 K St,,non-native,
+,Hymenoptera,Formicidae,?,?,1,flying ant,AH,AH,,,"Davis, CA",,,,
+,Odonata,Aeshnidae,Anax,junius,1,common green darner,AH,AH,,,"Davis, CA",,,,
+,Orthoptera,Grillidae,,,1,cricket,AH,AH,,,"Davis, CA",,,,
+,Orthoptera,Grillidae,,,1,cricket,AH,AH,,,"Davis, CA",,,,
+,Isoptera,?,?,?,1,termite,AH,AH,,,"Davis, CA",,,,
+,Ephemeroptera?,?,?,?,1,mayfly?,AH,AH,,,"Davis, CA",,,,probably too big for T brasiliensis prey

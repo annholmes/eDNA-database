@@ -6,3 +6,5 @@
 .DS_Store
 # ignore config.py
 config.py
+# ignore config.yml
+config.yml

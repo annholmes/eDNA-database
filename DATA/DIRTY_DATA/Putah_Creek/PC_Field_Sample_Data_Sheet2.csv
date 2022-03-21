@@ -1,0 +1,14 @@
+Date,Site,Replicates,Sampling_method,Filter_type,Collector,Field_crew,Notes
+12-Dec-19,Stebbins Cold Canyon,3,Pole sampler,Glass fiber,Holmes,Miner,
+12-Dec-19,Hasbrook Property,3,Pole sampler,Glass fiber,Holmes,Miner,
+12-Dec-19,East of Mace Blvd,3,Pole sampler,Glass fiber,Holmes,Miner,
+12-Dec-19,Negative Control,3,Pole sampler,Glass fiber,Holmes,Miner,
+21-May-20,Russell Ranch,3,eDNA sampler,Polycarbonate,Holmes,Miner & fyke sampling crew,Paired with fyke sample
+21-May-20,Hasbrook Property,3,eDNA sampler,Polycarbonate,Holmes,Miner,
+25-May-20,Russell Ranch,3,eDNA sampler,Polycarbonate,Holmes,Miner & fyke sampling crew,Paired with fyke sample
+27-May-20,Russell Ranch,7,eDNA sampler,Polycarbonate,Holmes,Miner & fyke sampling crew,Paired with fyke sample
+28-May-20,Stebbins Cold Canyon,3,eDNA sampler,Polycarbonate,Holmes,n/a,
+28-May-20,Negative Control,1,eDNA sampler,Polycarbonate,Holmes,n/a,
+28-May-20,Hasbrook Property,3,eDNA sampler,Polycarbonate,Holmes,n/a,
+28-May-20,East of Mace Blvd,3,eDNA sampler,Polycarbonate,Holmes,n/a,
+,,38,,,,,

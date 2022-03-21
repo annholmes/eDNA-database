@@ -1,0 +1,49 @@
+Occurrance_source,K,P,C,O,F,G,S,Common_name,Sequence,Sequence_source,Ag_pest,Notes
+data,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Nomophila,nearctica,lucerne moth,,KT131444.1,,
+data,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Bradycellus,tantillus,ground beetle,,HQ983966.1,,
+data,Animalia,Arthropoda,Insecta,Diptera,Culicidae,Culex,tarsalis,mosquito,,MG087219.1,,
+data,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Procladius,NA,biting midge,,MG140359.1,,
+data,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Chioneinae,NA,limoniid crane fly,,MG093954.1,,
+data,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Stenolophus,lineola,ground beetle,,KR487125.1,,
+data,Animalia,Arthropoda,Insecta,Diptera,Culicidae,Culex,nigripalpus,mosquito,,MN997479.1,,
+data,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Chironomus,NA,midge,,MF710356.1,,
+data,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Agonium,texanum,ground beetle,,MN344962.1,,
+data,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Euchromius,ocellea,necklace veneer; grass feeding pyralid,,MF059260.1,,
+data,Animalia,Arthropoda,Insecta,Lepidoptera,Alucitidae,Alucita,montana,Montana six-plume moth,,MG365107.1,,
+data,Animalia,Arthropoda,Insecta,Diptera,Dolichopodidae,Neoparentia,caudatus,longlegged fly,,MG082333.1,,1228 spp of Dolichopodidae
+data,Animalia,Arthropoda,Insecta,Diptera,Tephritidae,Euarestoides,acutangulus ,fruit fly,,KM648932.1,,
+data,Animalia,Arthropoda,Insecta,Diptera,Tephritidae,Chaetorellia,NA,fruit fly,,MG163593.1,,
+data,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,NA,NA,parasitic mite,,KM825880.1,,
+data,Animalia,Arthropoda,Arachnida,Mesostigmata,Laelapidae,NA,NA,parasitic mite,,KR102796.1,,
+data,Animalia,Arthropoda,Insecta,Orthoptera,Gryllidae,Gryllus,veletis,spring field cricket,,HQ986370.1,,
+data,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Chironominae,NA,midge,,JF871504.1,,
+data,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Mythimna,pallens,common wainscot (not in North America?),,MH850963.1,,
+data,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Leucania,commoides,comma wainscot; two-lined wainscot moth,,MG362162.1,,
+data,Animalia,Arthropoda,Insecta,Diptera,Tephritidae,Trupanea,NA,fruit fly,,JF871577.1,,
+data,Animalia,Arthropoda,Insecta,Diptera,Tephritidae,Trupanea,radifera,fruit fly,,KM630328.1,,
+data,Animalia,Arthropoda,Insecta,Coleoptera,Cerambycidae,Arhopalus,NA,longhorn beetle,,KY357769.1,,1378 spp of beetles in SoCal
+data,Animalia,Arthropoda,Insecta,Diptera,Culicidae,Culex,bhutanensis,mosquito,,MW476148.1,,"described from bhutan, part of mimulus subgroup"
+data,Animalia,Arthropoda,Insecta,Diptera,Culicidae,Culex,gelidus,mosquito,,MK630238.1,,blast search has gelidus very similar to bhutanensis
+data,Animalia,Arthropoda,Insecta,Diptera,Culicidae,Culex,mimulus,mosquito,,MF278820.1,,bhutanensis in mimulus complex; also from Asia I think
+data,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Limniinae,NA,,,KR391047.1,,~95% similar to GGCTTGAGCAGGAATAGTAGGAACCTCATTAAGAATTTTAATTCGAGCTGAATTAGGTCACCCTGGAGCTTTAATTGGGGATGATCAAATTTATAATGTTATTGTTACAGCTCATGCTTTCATTATAATTTTTTTTATAGTTATACCAATTATAATT
+data,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Metalimnobia,solitaria,,,MG089716.1,,~95% similar to GGCTTGAGCAGGAATAGTAGGAACCTCATTAAGAATTTTAATTCGAGCTGAATTAGGTCACCCTGGAGCTTTAATTGGGGATGATCAAATTTATAATGTTATTGTTACAGCTCATGCTTTCATTATAATTTTTTTTATAGTTATACCAATTATAATT
+data,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,bicornuta,,,AB669752.1,,~95% similar to GGCTTGAGCAGGAATAGTAGGAACCTCATTAAGAATTTTAATTCGAGCTGAATTAGGTCACCCTGGAGCTTTAATTGGGGATGATCAAATTTATAATGTTATTGTTACAGCTCATGCTTTCATTATAATTTTTTTTATAGTTATACCAATTATAATT
+data,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,micromelanica,,,EU390723.1,,~95% similar to GGCTTGAGCAGGAATAGTAGGAACCTCATTAAGAATTTTAATTCGAGCTGAATTAGGTCACCCTGGAGCTTTAATTGGGGATGATCAAATTTATAATGTTATTGTTACAGCTCATGCTTTCATTATAATTTTTTTTATAGTTATACCAATTATAATT
+data,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,kanekoi,,,DQ471604.1,,~95% similar to GGCTTGAGCAGGAATAGTAGGAACCTCATTAAGAATTTTAATTCGAGCTGAATTAGGTCACCCTGGAGCTTTAATTGGGGATGATCAAATTTATAATGTTATTGTTACAGCTCATGCTTTCATTATAATTTTTTTTATAGTTATACCAATTATAATT
+data,Animalia,Arthropoda,Insecta,Diptera,Tachinidae,Aphria,longirostris,tachinid fly,,JN310380.1,,1300 spp Tachinidae in N America (wikipedia); ~95% similar to GGCTTGAGCAGGAATAGTAGGAACCTCATTAAGAATTTTAATTCGAGCTGAATTAGGTCACCCTGGAGCTTTAATTGGGGATGATCAAATTTATAATGTTATTGTTACAGCTCATGCTTTCATTATAATTTTTTTTATAGTTATACCAATTATAATT
+data,Animalia,Arthropoda,Insecta,Diptera,Culicidae,Anopheles,claviger,marsh mosquito,,MH643764.1,,~95% similar to GGCTTGAGCAGGAATAGTAGGAACCTCATTAAGAATTTTAATTCGAGCTGAATTAGGTCACCCTGGAGCTTTAATTGGGGATGATCAAATTTATAATGTTATTGTTACAGCTCATGCTTTCATTATAATTTTTTTTATAGTTATACCAATTATAATT
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Lobesia,botrana,European grapevine moth,,MK655467.1,Y,~95% similar to GGCTTGAGCAGGAATAGTAGGAACCTCATTAAGAATTTTAATTCGAGCTGAATTAGGTCACCCTGGAGCTTTAATTGGGGATGATCAAATTTATAATGTTATTGTTACAGCTCATGCTTTCATTATAATTTTTTTTATAGTTATACCAATTATAATT
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Lymantria,dispar,gypsy moth,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Lepidoptera,,,,light brown apple moth,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Lepidoptera,,,,pink bollworm moth,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Diptera,,,,guava fruit fly,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Diptera,,,,Malaysian fruit fly,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Diptera,,,,Mediterranean fruit fly,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Diptera,,,,melon fruit fly,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Diptera,,,,Mexican fruit fly,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Diptera,,,,Oriental fruit fly,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Diptera,,,,peach fruit fly,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Diptera,,,,white striped fruit fly,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Coleoptera,,,,Japanese beetle,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Coleoptera,,,,red palm weevil,,,Y,
+https://www.cdfa.ca.gov/plant/pest_programs.html,Animalia,Arthropoda,Insecta,Hemiptera,Liviidae,Diaphorina,citri ,Asian citrus psyllid (Huanglongbing),,,Y,

@@ -1,0 +1,71 @@
+---
+title: "Cleaning Bat_Studies tables"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+``` {r importing dependencies}
+#library(gtsummary)
+#library(jsonlite)
+library(tidyverse)
+library(dplyr)
+```
+
+
+```{r cleaning insect_collections.csv}
+insect_collections <- read.csv(file = "../DIRTY_DATA/Bat_Studies/insect_collections.csv", check.names = F, stringsAsFactors = F)
+
+# renaming columns
+insect_collections <- rename(insect_collections, AH_catalog_number = "AH catalog #")
+insect_collections <- rename(insect_collections, number_individuals = "Number individuals")
+insect_collections <- rename(insect_collections, common_name = "Common name")
+insect_collections <- rename(insect_collections, ID_by = "ID by")
+insect_collections <- rename(insect_collections, collected_by = "Collected by")
+insect_collections <- rename(insect_collections, collection_date = "Collection date")
+insect_collections <- rename(insect_collections, collection_year = "Collection year")
+insect_collections <- rename(insect_collections, locality_details = "Locality details")
+
+# writing new csv file in clean folder
+write.csv(insect_collections, "../CLEAN_DATA/Bat_Studies/clean_insect_collections.csv", row.names=FALSE)
+clean_insect_collections <- read.csv(file = "../CLEAN_DATA/Bat_studies/clean_insect_collections.csv", check.names = F, stringsAsFactors = F)
+
+# replacing NA with empty cells
+clean_insect_collections[is.na(clean_insect_collections)] = ""
+
+write.csv(clean_insect_collections, "../CLEAN_DATA/Bat_Studies/clean_insect_collections.csv", row.names=FALSE)
+```
+
+```{r cleaning Insect_orders_Wheeler_2001.csv}
+insect_orders <- read.csv(file = "../DIRTY_DATA/Bat_Studies/Insect_orders_Wheeler_2001.csv", check.names = F, stringsAsFactors = F)
+
+# renaming columns
+names(insect_orders)[7] <- "notes_1"
+names(insect_orders)[17] <- "notes_2"
+insect_orders <- rename(insect_orders, order_name = "Order Name")
+insect_orders <- rename(insect_orders, common_name = "Common name")
+insect_orders <- rename(insect_orders, adult_mouthparts = "Adult mouthparts")
+insect_orders <- rename(insect_orders, wings_no_type = "Wings (no. and type)")
+insect_orders <- rename(insect_orders, number_species_worldwide = "# spp. worldwide (wikipedia unless noted)")
+insect_orders <- rename(insect_orders, reference_sequencing_priority = "Priority for reference sequencing")
+insect_orders <- rename(insect_orders, ann_specimens = "Ann's specimens")
+insect_orders <- rename(insect_orders, key_families = "Key families")
+insect_orders <- rename(insect_orders, kunz_1995 = "Kunz et al. 1995")
+insect_orders <- rename(insect_orders, whitaker_1996 = "Whitaker et al. 1996")
+insect_orders <- rename(insect_orders, long_1998 = "Long et al. 1998")
+insect_orders <- rename(insect_orders, lee_2005 = "Lee et al. 2005")
+insect_orders <- rename(insect_orders, mcwilliams_2005 = "McWilliams et al. 2005")
+insect_orders <- rename(insect_orders, krauel_2018 = "Krauel et al. 2018")
+insect_orders <- rename(insect_orders, from_corky = "From Corky")
+
+# writing new csv file in clean folder
+write.csv(insect_orders, "../CLEAN_DATA/Bat_Studies/clean_insect_orders.csv", row.names=FALSE)
+clean_insect_orders <- read.csv(file = "../CLEAN_DATA/Bat_studies/clean_insect_orders.csv", check.names = F, stringsAsFactors = F)
+
+# replacing NA with empty cells
+clean_insect_orders[is.na(clean_insect_orders)] = ""
+
+write.csv(clean_insect_orders, "../CLEAN_DATA/Bat_Studies/clean_insect_orders.csv", row.names=FALSE)
+```
+

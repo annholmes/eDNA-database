@@ -1,0 +1,93 @@
+---
+title: "cleaning_putah_creek_data"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r importing dependencies}
+library(tidyverse)
+library(dplyr)
+```
+
+
+```{r cleaning Sites_AHolmes_Tim_Oct_2020.csv}
+sites_aholmes <- read.csv(file = "../DIRTY_DATA/Putah_Creek/Sites_AHolmes_Tim_Oct_2020.csv", check.names = F, stringsAsFactors = F)
+
+# dropping columns and rows
+sites_aholmes <- sites_aholmes[-c(12:35),-c(5:6, 9:10)]
+
+# renaming columns
+sites_aholmes <- rename(sites_aholmes, upstream_Lon_DD = "upstream_Lat_DD.1")
+
+# writing new csv file in clean folder
+write.csv(sites_aholmes, "../CLEAN_DATA/Putah_Creek/clean_sites_aholmes.csv", row.names=FALSE)
+clean_sites_aholmes <- read.csv(file = "../CLEAN_DATA/Putah_Creek/clean_sites_aholmes.csv", check.names = F, stringsAsFactors = F)
+
+# replacing NA with empty cells
+clean_sites_aholmes[is.na(clean_sites_aholmes)] = ""
+
+write.csv(clean_insect_collections, "../CLEAN_DATA/Putah_Creek/clean_sites_aholmes.csv", row.names=FALSE)
+```
+
+
+```{r cleaning PC_reference_barcodes.csv}
+PC_reference_barcodes = read.csv(file = "../DIRTY_DATA/Putah_Creek/PC_reference_barcodes.csv", check.names = F, stringsAsFactors = F)
+# minor cleaning done on excel (remove ">" from kingdom row)
+
+# writing new csv file in clean folder
+write.csv(PC_reference_barcodes, "../CLEAN_DATA/Putah_Creek/clean_PC_reference_barcodes.csv", row.names=FALSE)
+clean_PC_reference_barcodes <- read.csv(file = "../CLEAN_DATA/Putah_Creek/clean_PC_reference_barcodes.csv", check.names = F, stringsAsFactors = F)
+
+# replacing NA with empty cells
+clean_PC_reference_barcodes[is.na(clean_PC_reference_barcodes)] = ""
+
+write.csv(clean_PC_reference_barcodes, "../CLEAN_DATA/Putah_Creek/clean_PC_reference_barcodes.csv", row.names=FALSE)
+```
+
+```{r cleaning PC_Field_Sample_Data_Sheet1.csv}
+PC_Field_Sample_Data_Sheet1 = read.csv(file = "../DIRTY_DATA/Putah_Creek/PC_Field_Sample_Data_Sheet1.csv", check.names = F, stringsAsFactors = F)
+
+# renaming columns
+PC_Field_Sample_Data_Sheet1 <- rename(PC_Field_Sample_Data_Sheet1, collection_method = "Collection method")
+
+# writing new csv file in clean folder
+write.csv(PC_Field_Sample_Data_Sheet1, "../CLEAN_DATA/Putah_Creek/clean_PC_Field_Sample_Data_Sheet1.csv", row.names=FALSE)
+clean_PC_Field_Sample_Data_Sheet1 <- read.csv(file = "../CLEAN_DATA/Putah_Creek/clean_PC_Field_Sample_Data_Sheet1.csv", check.names = F, stringsAsFactors = F)
+
+# replacing NA with empty cells
+clean_PC_Field_Sample_Data_Sheet1[is.na(clean_PC_Field_Sample_Data_Sheet1)] = ""
+
+write.csv(clean_PC_Field_Sample_Data_Sheet1, "../CLEAN_DATA/Putah_Creek/clean_PC_Field_Sample_Data_Sheet1.csv", row.names=FALSE)
+```
+
+```{r cleaning PC_Field_Sample_Data_Sheet2.csv}
+PC_Field_Sample_Data_Sheet2 = read.csv(file = "../DIRTY_DATA/Putah_Creek/PC_Field_Sample_Data_Sheet2.csv", check.names = F, stringsAsFactors = F)
+
+# writing new csv file in clean folder
+write.csv(PC_Field_Sample_Data_Sheet2, "../CLEAN_DATA/Putah_Creek/clean_PC_Field_Sample_Data_Sheet2.csv", row.names=FALSE)
+clean_PC_Field_Sample_Data_Sheet2 <- read.csv(file = "../CLEAN_DATA/Putah_Creek/clean_PC_Field_Sample_Data_Sheet2.csv", check.names = F, stringsAsFactors = F)
+
+# replacing NA with empty cells
+clean_PC_Field_Sample_Data_Sheet2[is.na(clean_PC_Field_Sample_Data_Sheet2)] = ""
+
+write.csv(clean_PC_Field_Sample_Data_Sheet2, "../CLEAN_DATA/Putah_Creek/clean_PC_Field_Sample_Data_Sheet2.csv", row.names=FALSE)
+```
+
+```{r cleaning PC_eDNA_library_prep.csv}
+PC_eDNA_library_prep = read.csv(file = "../DIRTY_DATA/Putah_Creek/PC_eDNA_library_prep.csv", check.names = F, stringsAsFactors = F)
+
+# writing new csv file in clean folder
+write.csv(PC_eDNA_library_prep, "../CLEAN_DATA/Putah_Creek/clean_PC_eDNA_library_prep.csv", row.names=FALSE)
+clean_PC_eDNA_library_prep <- read.csv(file = "../CLEAN_DATA/Putah_Creek/clean_PC_eDNA_library_prep.csv", check.names = F, stringsAsFactors = F)
+
+# replacing NA with empty cells
+clean_PC_eDNA_library_prep[is.na(clean_PC_eDNA_library_prep)] = ""
+
+write.csv(clean_PC_eDNA_library_prep, "../CLEAN_DATA/Putah_Creek/clean_PC_eDNA_library_prep.csv", row.names=FALSE)
+```
+
+
+
