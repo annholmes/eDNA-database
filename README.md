@@ -28,7 +28,11 @@ If you are installing MySQL onto a macOS machine please watch [this video](https
 ### Establishing a connection to our database:
 Luckily, setting up a new connection to the database is simple as well. When you open MySQL Workbench you are greeted by your connections page. To make a local connection (i.e. a connection to a MySQL server that is not our database) you can simply click on the plus sign that is next to "MySQL Connections" and a pop up will open asking you to configure your new database connection. When you are greeted by this page there are is just one thing that you want to change. That would be the "Connection Name". This can be whatever you want it to be, but it should be something relevant to what the database stores. Once you have done this you can simply click on the "Store in Keychain ..." (if you are on mac )next to "Password" and enter in the password that you put in when installing MySQL.
 
+![plus_sign_connection](https://user-images.githubusercontent.com/89175578/177710014-30bfe78a-1ffc-40a6-9bf5-8ed4df01e084.png)
+
 Congratulations on setting up a local connection! This is yours entirely to play around with, you can import and export tables all you want here to learn and practice! Make sure that you can do this step, as this is the connection that we are going to use to practice using SQL!
+
+![new_connection_box](https://user-images.githubusercontent.com/89175578/177710080-faabe303-bbee-4b72-aa48-fd973846127b.png)
 
 Now we are going to learn how to set up the connection to our database server. Once you set up this connection you will be able to see all of the data that we have stored and even play around with it once you are more comfortable with SQL and the database. 
 *Do not "drop" or alter the database until you have practiced SQL on your local server. Relational database enforce integrity, which means that it is very hard to reverse actions once they have been made*.
@@ -41,15 +45,10 @@ Now we are going to learn how to set up the connection to our database server. O
 
 The last step is to click "Test Connection". You should receive a message that says that your connection was successful. You want to do this before you click "OK" to ensure that your connection works. Once you get this confirmation you can click the "OK". If you do not get this message after entering the proper information, contact someone in the lab that can help you with this.
 
-**SCREENSHOT OF PLUS SIGN FOR NEW CONNECTION**
-**SCREENSHOT OF NEW CONNECTION BOX**
-
 Once you have installed these two programs and established a connection to our database, you will be able to look at all the information we have saved in our database. **Eventually we will add permissions to certain users**
 
 ## How to use MySQLWorkbench and SQL together.
 The structure of a database is analogous to a directory or file system in a computer. Consider a folder on your desktop, and within that folder there is a folder named "Data" which contains some csv files. This system of organization can be thought of as a rudimentary database. Compared to our MySQL database, the desktop would be our connection, the folder would be a database, the "Data" folder would be our schemas, and the csv files would be our tables.
-
-*image*
 
 However what this system does not provide is a way to relate this information to each other. It stores the information and lets you view it, but as a standalone system it is limited in its functionality. Instead, by using MySQL we are able to store, access, and manipulate all of this information in a central location. 
 
@@ -57,6 +56,7 @@ In this quick tutorial you will learn how to import, export, and join tables usi
 
 ### How to add a database
 Before we learn how to add a table, we need to add some databases to our connection. These databases within our connection is where our tables and information is going to live. There are two ways to create a database once a connection is established. The first is to simply execute the query `create database [database_name];` using SQL. The ";" at the end of the query is important becasue it tells SQL that that is the end of your request. The second is to use the options in the workbench GUI *image*. By selecting the option to create a database a popup will open asking you to name the database. After this is done, and "apply" is selected a new database will be created. You should see your database populate under the "Schemas" tab on the left side of the screen. If you do not, click on the "refresh" symbol and it should populate then. You can also run the SQL query `show databases;` and it should present you with all the databases that are held within this connection. You may notice some databases that you did not initiate here, that is OKAY, you should not try to "drop" any of them.
+
 #### How to delete a database
 ## ONCE A DATABASE IS DELETED THERE IS NO WAY TO RECOVER IT, BE VERY CAUTIOUS WHEN DELETING ANYTHING FROM A DATABASE. ALL INFORMATION IN THE DATABASE WILL BE DELETED.
 There are also two ways to drop a database. Similarly one is able to drop the database by executing `drop database [database_name];`. Once a database is created you can also right click on the database and select "Drop Schema...". If you do this a pop up will ask you if you are sure that is what you want to do, you can simply click "Drop Now".
@@ -94,6 +94,7 @@ Great! Now we have learned how to create and delete a table, but a table's struc
 
 We will be adding the "example_data1.csv" that is in the initial directory from the eDNA-databae you repository you cloned from github. You can open up this file and see its contents. You will notice that the column names match the ones that we constructed within our database. However you will also notice that it has an extra column that indexes each of the rows. This will be important later on but you can ignore it for now.
 
+![table_data_import_wizard](https://user-images.githubusercontent.com/89175578/177710174-67883789-2989-44d0-abd1-b6cdfcb2c683.png)
 1. Right-click on the "test" table in your "test_DB" database.
 2. Select "Table Data Import Wizard"
 3. On the "Select File to Import" screen click on "Browse...". Find the "example_data1.csv" and select it. Click "Next >".
@@ -105,8 +106,6 @@ We will be adding the "example_data1.csv" that is in the initial directory from 
 At this point you can simply continue clicking "Next >" until you can click "Finish". Now you can execute the same query as before `select * from test_DB.test;` and it will show you your table that is now populated.
 
 Congratulations you SQL wizard, you did it again. You populated a table that you created with some information!
-
-**SCREENSHOT OF THE DATA IMPORT WIZARD PROCESS**
 
 #### How to delete records from a table
 Deleting records from a table is something that we are not going to practice, but is valuable to know. In order to delete all records in a table without deleting the table itself you can use the query `delete from [table_name];`. If you want to delete specific records from the table that meet a certain criteria you will have to use a "where" statement. This is also simple, the basic query structure is as follows: `delete from [table_name] where [condition];`. The condition that you select could be any number of things that we will not get into right now, but an example could be: `delete from test where number_of_siblings < 3;`. Unfortunately, this will not work for you due to some safety settings that are the default in MySQL. You can search how to circumvent the error that it gives you, but for now it is okay to just know how you are able to delete records from a table. Typically we do not want to delete records from a table, for the same reason that we do not want to drop tables or databases. These are actions that can not be reversed.
@@ -138,7 +137,7 @@ inner join test_join
 on test.first_name = test_join.first_name;
 ```
 This should be your result:
-**join_table_example.png**
+<img width="396" alt="join_table_example" src="https://user-images.githubusercontent.com/89175578/177710241-51b08d08-b4d4-41af-ac88-4b0fea8fbe08.png">
 
 Here is what is happening in this query:
 - The "select" statement chooses which columns from each table we want to see
