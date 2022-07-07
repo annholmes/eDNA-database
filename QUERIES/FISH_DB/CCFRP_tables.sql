@@ -1,6 +1,6 @@
 create schema CCFRP;
 
--- Creating the CCFRP tables
+-- Creating the CCFRP tablesdrift_info_all
 create table CCFRP.drift_info_all (
 	drift_id varchar(16),
 	trip_id varchar(16),
@@ -185,71 +185,79 @@ create table CCFRP.waypoints (
 );
 
 create table CCFRP.ccfrp_2020_edna (
-	`date` varchar(8),
+	ID varchar(15),
+    Project varchar(10),
+    collection_date date,
 	cell_location varchar(16),
 	replicate varchar(4),
-	region varchar(16),
+	collection_site varchar(16),
 	cell_type varchar(16),
 	collector varchar(8),
 	vessel varchar(16),
-	site_start varchar(8),
-	site_end varchar(8),
+	site_start time,
+	site_end time,
 	conditions varchar(1),
-	sst_f float4,
+	sst_f float(3,1),
 	rugosity int4,
-	site_depth_ft int4,
+	site_depth_ft float4,
 	filter_type varchar(16),
-	filter_pore_um float4,
+	filter_pore_um float(3,2),
 	niskin_closed varchar(8),
-	lat float4,
-	lon float4,
-	filtration_date varchar(8),
-	filtration_time varchar(8),
+	lat float(8,6),
+	lon float(9,6),
+	filtration_date date,
+	filtration_time time,
 	filterer varchar(8),
 	filtration_site varchar(16),
-	turbidity float4,
-	ph varchar(16),
-	vol_l int4,
+	turbidity float(3,2),
+	ph float(3,2),
+	vol_l float4,
 	appr_niskin_line_out int4,
-	niskin_depth_probe varchar(1),
-	temp_at_depth varchar(1),
+	niskin_depth_probe float(15,13),
+	temp_at_depth float(4,2),
 	notes varchar(256),
 	ann_labels varchar(16),
-	extracted varchar(16)
+	edna_sample_status int(1),
+    extraction_date date,
+    SU_Serial int4
 );
 
 create table CCFRP.ccfrp_2021_edna (
-	`date` varchar(8),
+	ID varchar(15),
+    project varchar(10),
+    collection_date date,
 	cell_location varchar(32),
 	replicate varchar(4),
-	region varchar(2),
+	collection_site varchar(2),
 	cell_type varchar(4),
 	collectors varchar(8),
 	vessel varchar(16),
-	site_start varchar(1),
-	site_end varchar(1),
-	niskin_closed varchar(8),
+	site_start time,
+	site_end time,
+	niskin_closed time,
 	waypoint int4,
-	lat varchar(1),
-	lon varchar(1),
-	conditions varchar(1),
-	sst_f int4,
+	lat float(8,6),
+	lon float(9,6),
+	conditions varchar(256),
+	sst_f float(3,1),
 	rugosity int4,
 	site_depth_ft int4,
 	appr_niskin_line_out int4,
-	niskin_depth_probe varchar(1),
-	temp_at_depth varchar(1),
+	niskin_depth_probe float(15,13),
+	temp_at_depth float(4,2),
 	filter_type varchar(8),
-	filter_pore_um float4,
-	filtration_date varchar(8),
-	filtration_time varchar(8),
+	filter_pore_um float(3,2),
+	filtration_date date,
+	filtration_time time,
 	filterer varchar(8),
 	filtration_site varchar(32),
-	turbidity float4,
-	ph varchar(16),
-	vol_l float4,
+	turbidity float(3,2),
+	ph float(3,2),
+	vol_l float(3,2),
 	notes varchar(128),
-	extracted varchar(16)
+    edna_sample_status int(1),
+	extracted date,
+    SU_Serial int4
 );
 
 create table CCFRP.caught_fishes_all (
@@ -296,8 +304,8 @@ create table CCFRP.ccfrp_2020_sequencing (
 -- drop table if exists CCFRP.Reference_Barcodes cascade; 
 -- drop table if exists CCFRP.sequenced_data cascade; 
 -- drop table if exists CCFRP.waypoints cascade;
--- drop table if exists CCFRP.CCFRP_2020_eDNA cascade;
--- drop table if exists CCFRP.CCFRP_2021_eDNA cascade;
+-- drop table if exists CCFRP.ccfrp_2020_edna cascade;
+-- drop table if exists CCFRP.ccfrp_2021_edna cascade;
 -- drop table if exists CCFRP.Caught_fishes_all cascade;
 -- drop table if exists CCCFRP.CFRP_2020_Sequencing cascade;
 -- drop table if exists CCFRP.drift_info_all cascade;

@@ -288,6 +288,12 @@ clean_HK_Fishes[is.na(clean_HK_Fishes)] = ""
 
 write.csv(clean_HK_Fishes, "../CLEAN_DATA/clean_HK_Fishes.csv", row.names=FALSE)
 ```
+```{r cleaning clean_CCFRP_eDNA_2021_UA_tested.csv}
+stubbrorn_2021_edna_data <- read.csv(file = "../CLEAN_DATA/CCFRP/clean_CCFRP_eDNA_2021_UA_tested.csv", check.names = F, stringsAsFactors = F)
+
+write.csv(stubbrorn_2021_edna_data, "../CLEAN_DATA/through_R_stubbrorn_2021_edna_data.csv", row.names=FALSE)
+
+```
 
 
 

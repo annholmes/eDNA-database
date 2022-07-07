@@ -1,7 +1,7 @@
-create schema CCFRP;
-create schema Bat_Studies;
-create schema SFE_Suis;
-create schema Putah_Creek;
+-- create schema CCFRP;
+-- create schema Bat_Studies;
+-- create schema SFE_Suis;
+-- create schema Putah_Creek;
 
 -- Creating the CCFRP tables
 create table CCFRP.drift_info_all (
